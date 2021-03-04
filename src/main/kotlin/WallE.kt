@@ -5,7 +5,7 @@ class WallE(x: Int, y: Int) {
     // Pontos que o WallE ja tem. Comeca com 1 porque o primeiro ja apanhou
     var pontos = 1
 
-    // Point2D é uma classe de Java que permite um ponto numa coordenada (x, y)
+    // A variavel do tipo Coordenadas permite definir um ponto numa coordenada (x, y)
     var posicao: Coordenadas = Coordenadas(x, y)
 
     // Lista de casas que ja limpou
