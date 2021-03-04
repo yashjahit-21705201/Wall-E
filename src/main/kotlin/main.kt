@@ -7,7 +7,11 @@ fun main() {
         println("Escreva os movimentos (N/S/E/O)")
         consola = readLine()!!.toUpperCase()
 
-        println("${wallE.leConsola(consola)}")
+        if (consola == "RESTART") {
+            println("${wallE.resetEverything()}")
+        } else {
+            println("${wallE.leConsola(consola)}")
+        }
     }
 
 }

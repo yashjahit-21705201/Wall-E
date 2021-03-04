@@ -19,8 +19,8 @@ class WallE(x: Int, y: Int) {
     // Funcao verifica a direcao e faz o devido movimento
     fun move(direcao: Char) {
         when(direcao) {
-            'N' -> this.posicao.setLocalizacao(this.posicao.x, this.posicao.y - 1)
-            'S' -> this.posicao.setLocalizacao(this.posicao.x, this.posicao.y + 1)
+            'N' -> this.posicao.setLocalizacao(this.posicao.x, this.posicao.y + 1)
+            'S' -> this.posicao.setLocalizacao(this.posicao.x, this.posicao.y - 1)
             'E' -> this.posicao.setLocalizacao(this.posicao.x + 1, this.posicao.y)
             'O' -> this.posicao.setLocalizacao(this.posicao.x - 1, this.posicao.y)
         }
@@ -53,6 +53,14 @@ class WallE(x: Int, y: Int) {
         }
 
         return false
+    }
+
+    fun resetEverything(): Int {
+        posicao = Coordenadas(0, 0)
+        this.posicoesPrevias.clear()
+        this.pontos = 1
+        guardaPosicao()
+        return this.pontos
     }
 
 }
