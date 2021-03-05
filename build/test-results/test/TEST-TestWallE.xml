@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestWallE" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-03-04T21:42:21" hostname="DESKTOP-CP0A4DS" time="6.485">
+<testsuite name="TestWallE" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-03-05T13:31:05" hostname="DESKTOP-CP0A4DS" time="5.985">
   <properties/>
-  <testcase name="testComNumeros()" classname="TestWallE" time="0.028"/>
+  <testcase name="testComNumeros()" classname="TestWallE" time="0.021"/>
+  <testcase name="testDifferentCase()" classname="TestWallE" time="0.001"/>
   <testcase name="testSemEscreverLetra()" classname="TestWallE" time="0.001"/>
-  <testcase name="testGrandeString()" classname="TestWallE" time="6.445"/>
+  <testcase name="testGrandeString()" classname="TestWallE" time="5.949"/>
+  <testcase name="testInputValidoMisturadoComInvalido()" classname="TestWallE" time="0.001"/>
   <testcase name="testTresPercusos()" classname="TestWallE" time="0.007"/>
   <testcase name="testStringComEspaco()" classname="TestWallE" time="0.001"/>
   <system-out><![CDATA[]]></system-out>

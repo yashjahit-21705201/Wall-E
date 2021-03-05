@@ -35,11 +35,14 @@ class WallE(x: Int, y: Int) {
     }
 
     fun leConsola(consola: String): Int {
-        for (i in consola) {
+        for (i in consola.toUpperCase()) {
             move(i)
         }
+        val pontosAntes = this.pontos
 
-        return this.pontos
+        resetEverything()
+
+        return pontosAntes
     }
 
     private fun guardaPosicao() {
@@ -55,7 +58,7 @@ class WallE(x: Int, y: Int) {
         return false
     }
 
-    fun resetEverything(): Int {
+    private fun resetEverything(): Int {
         posicao = Coordenadas(0, 0)
         this.posicoesPrevias.clear()
         this.pontos = 1

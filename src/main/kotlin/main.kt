@@ -5,13 +5,9 @@ fun main() {
     var consola = ""
     while (consola != "EXIT") {
         println("Escreva os movimentos (N/S/E/O)")
-        consola = readLine()!!.toUpperCase()
+        consola = readLine()!!
 
-        if (consola == "RESTART") {
-            println("${wallE.resetEverything()}")
-        } else {
-            println("${wallE.leConsola(consola)}")
-        }
+        println("${wallE.leConsola(consola)}")
     }
 
 }
